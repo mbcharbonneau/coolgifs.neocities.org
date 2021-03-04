@@ -22,7 +22,7 @@ function createGif () {
   })
 
   img.setAttribute('style', 'left:' + offset+'px')
-  img.setAttribute('src', '/gifs/' + n + '.gif')
+  img.setAttribute('src', 'gifs/' + n + '.gif')
 
   document.querySelector('body').appendChild(img)
 
@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   $('.title > span').on('click', playSound)
   $('#mode').on('click', flipMode)
   setInterval(createGif, 94)
-  speak('welcome to the cool gifs site')
+  speak('welcome to the horse playlist')
 })
 
 document.addEventListener('keydown', playSound)
